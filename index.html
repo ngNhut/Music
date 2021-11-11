@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music player</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="player">
+    <!-- Dashboard -->
+    <div class="dashboard">
+      <!-- Header -->
+      <header>
+        <div class="container" style="display: flex;">
+          <div style="text-align: left; width: 130px;">
+            <svg fill = '#019CDD' viewBox='309.6151 164.2291 152.0001 151.9999' width='50' height='49.99993421056959' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' preserveAspectRatio='none'><defs></defs><g opacity='1' transform='rotate(0 309.6151 164.2291)'> <svg width='152.0001' height='151.9999' x='309.6151' y='164.2291' version='1.1' preserveAspectRatio='none' viewBox='5.547246932983398 5.548251152038574 88.90450286865234 88.90451049804688'> <g transform='matrix(1 0 0 1 0 0)' class='icon1eXagYERU3'><g><path d='M81.446,18.554c-17.341-17.341-45.552-17.341-62.893,0s-17.341,45.552,0,62.893s45.552,17.341,62.893,0 S98.787,35.895,81.446,18.554z M28.034,82.339c-2.001-1.357-3.905-2.923-5.678-4.695s-3.338-3.677-4.695-5.678l14.422-10.443 c0.807,1.255,1.755,2.445,2.852,3.543c1.098,1.097,2.288,2.045,3.542,2.852L28.034,82.339z M61.262,61.262 c-6.209,6.21-16.314,6.21-22.523,0c-6.21-6.209-6.21-16.314,0-22.523c6.209-6.21,16.314-6.21,22.523,0 C67.472,44.947,67.472,55.053,61.262,61.262z M67.917,38.477c-0.807-1.254-1.755-2.445-2.852-3.542 c-1.098-1.097-2.288-2.045-3.543-2.852l10.443-14.422c2.001,1.357,3.905,2.923,5.678,4.695s3.338,3.677,4.695,5.678L67.917,38.477z '></path><circle cx='50' cy='50' r='3.724'></circle></g></g> </svg> </g></svg>
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="551.8597 278.6801 75.414 70.5489" width="25" height="25" preserveAspectRatio="none"><defs/><style>.aEkUXo6p-nkcolors-0An9kxjDKc {fill:#019CDD;fill-opacity:1;}.aEkUXo6p-nkcolors-1An9kxjDKc {fill:#FF89AE;fill-opacity:1;}.aEkUXo6p-nkcolors-2An9kxjDKc {fill:#84E795;fill-opacity:1;}.aEkUXo6p-nkcolors-3An9kxjDKc {fill:#019CDD;fill-opacity:1;}.aEkUXo6p-nkcolors-4An9kxjDKc {fill:#FF89AE;fill-opacity:1;}.aEkUXo6p-nkcolors-5An9kxjDKc {fill:#84E795;fill-opacity:1;}.aEkUXo6p-nkcolors-6An9kxjDKc {fill:#019CDD;fill-opacity:1;}.aEkUXo6p-nkcolors-7An9kxjDKc {fill:#FF89AE;fill-opacity:1;}</style><g opacity="1" transform="rotate(0 551.8597 278.6801)"> <svg width="75.414" height="70.5489" x="551.8597" y="278.6801" version="1.1" preserveAspectRatio="none" viewBox="20 25 160 149.67800903320312"> <g transform="matrix(1 0 0 1 0 0)"><g><path clip-rule="evenodd" fill-rule="evenodd" d="M69.032 25a7.742 7.742 0 0 1 7.742 7.742v134.194a7.742 7.742 0 1 1-15.484 0V32.742A7.742 7.742 0 0 1 69.032 25zm20.645 12.903a7.742 7.742 0 0 1 7.742 7.742v108.387a7.742 7.742 0 1 1-15.484 0V45.645a7.742 7.742 0 0 1 7.742-7.742zm-41.29 10.323a7.742 7.742 0 0 1 7.742 7.742v87.742a7.742 7.742 0 1 1-15.484 0V55.968a7.742 7.742 0 0 1 7.742-7.742zm103.226 10.322a7.742 7.742 0 0 1 7.742 7.742v67.097a7.742 7.742 0 1 1-15.484 0V66.29a7.742 7.742 0 0 1 7.742-7.742zm-41.29 0a7.742 7.742 0 0 1 7.742 7.742v67.097a7.742 7.742 0 1 1-15.484 0V66.29a7.742 7.742 0 0 1 7.742-7.742zm20.645 12.904a7.742 7.742 0 0 1 7.742 7.742v41.29a7.742 7.742 0 1 1-15.484 0v-41.29a7.742 7.742 0 0 1 7.742-7.742zM27.742 79.194a7.742 7.742 0 0 1 7.742 7.742v23.226A7.742 7.742 0 1 1 20 110.161V86.935a7.742 7.742 0 0 1 7.742-7.741z" data-color="1" class="aEkUXo6p-nkcolors-0An9kxjDKc"/><path clip-rule="evenodd" fill-rule="evenodd" d="M172.258 81.774A7.742 7.742 0 0 1 180 89.516v20.645a7.742 7.742 0 1 1-15.484 0V89.516a7.742 7.742 0 0 1 7.742-7.742z" data-color="2" class="aEkUXo6p-nkcolors-1An9kxjDKc"/><path opacity=".9" clip-rule="evenodd" fill-rule="evenodd" d="M151.613 58.548a7.742 7.742 0 0 1 7.742 7.742v67.097a7.742 7.742 0 1 1-15.484 0V66.29a7.742 7.742 0 0 1 7.742-7.742z" data-color="2" class="aEkUXo6p-nkcolors-1An9kxjDKc"/><path opacity=".75" clip-rule="evenodd" fill-rule="evenodd" d="M130.968 71.452a7.742 7.742 0 0 1 7.742 7.742v41.29a7.742 7.742 0 1 1-15.484 0v-41.29a7.742 7.742 0 0 1 7.742-7.742z" data-color="2" class="aEkUXo6p-nkcolors-1An9kxjDKc"/><path opacity=".6" clip-rule="evenodd" fill-rule="evenodd" d="M110.323 58.548a7.742 7.742 0 0 1 7.742 7.742v67.097a7.742 7.742 0 1 1-15.484 0V66.29a7.742 7.742 0 0 1 7.742-7.742z" data-color="2" class="aEkUXo6p-nkcolors-1An9kxjDKc"/><path opacity=".45" clip-rule="evenodd" fill-rule="evenodd" d="M89.677 37.903a7.742 7.742 0 0 1 7.742 7.742v108.387a7.742 7.742 0 1 1-15.484 0V45.645a7.742 7.742 0 0 1 7.742-7.742z" data-color="2" class="aEkUXo6p-nkcolors-1An9kxjDKc"/><path opacity=".3" clip-rule="evenodd" fill-rule="evenodd" d="M69.032 25a7.742 7.742 0 0 1 7.742 7.742v134.194a7.742 7.742 0 1 1-15.484 0V32.742A7.742 7.742 0 0 1 69.032 25z" data-color="2" class="aEkUXo6p-nkcolors-1An9kxjDKc"/><path opacity=".15" clip-rule="evenodd" fill-rule="evenodd" d="M48.387 48.226a7.742 7.742 0 0 1 7.742 7.742v87.742a7.742 7.742 0 1 1-15.484 0V55.968a7.742 7.742 0 0 1 7.742-7.742z" data-color="2" class="aEkUXo6p-nkcolors-1An9kxjDKc"/></g></g> </svg> </g></svg>
+          </span>
+          <p style="font-family: 'Fredoka One', cursive; font-size: 1.3rem; color: #fff;text-shadow: 2px 1px black;">
+            FoodBoyUte
+          </p>
+          <p style="font-size: .7rem; text-align: center; font-weight: 550;" >
+            Nhựt Nguyễn
+          </p>
+          </div>
+          <p style="text-align: center;font-weight: 700; color: #fff; font-size: 1.5rem;">Chúc mừng sinh nhật chị bé Năm</p>
+        </div>
+        <h4>Now playing: <span id='get'></span></h4>
+        <h2></h2>
+      </header>
+  
+      <!-- CD -->
+      <div class="cd">
+        <div class="cd-thumb" style="background-image: url('./asset/img/song1.jpg')">
+        </div>
+      </div>
+  
+      <!-- Control -->
+      <div class="control">
+        <div class="btn btn-repeat">
+          <i class="fas fa-redo"></i>
+        </div>
+        <div class="btn btn-prev">
+          <i class="fas fa-step-backward"></i>
+        </div>
+        <div class="btn btn-toggle-play">
+          <i class="fas fa-pause icon-pause"></i> 
+          <i class="fas fa-play icon-play"></i>
+        </div>
+        <div class="btn btn-next">
+          <i class="fas fa-step-forward"></i>
+        </div>
+        <div class="btn btn-random">
+          <i class="fas fa-random"></i>
+        </div>
+      </div>
+  <div style="display:flex; align-items: center;">
+        <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
+        <span style="margin-left: 5px;" id="duration"></span>
+  </div>
+  
+      <audio id="audio" src="" ></audio>
+    </div>
+  
+    <!-- Playlist -->
+    <div class="playlist">
+    </div>
+  </div>
+</body>
+<script src="./script.js"></script>
+</html>
+
+
+<!-- Design from: https://static.collectui.com/shots/3671744/musicloud-revolutionary-app-for-music-streaming-large -->
